@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis Chaves Mora">
+    <meta name="description" content="Portafolio de Desarrollo WEB de Luis Chaves">
+    <meta name="keywords" content="HTML, CSS, C#, Bootstrap, Dev">
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- stylesheet css -->
+    <link rel="stylesheet" href="./syles.css">
+    <!-- Icono Empresa -->
+    <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon">
+    <title>Mi Portafolio DEV</title>
+</head>
+
+<body>
+    <!-- ---------------- Navbar ---------------- -->
+    <nav class="navbar navbar-expand-md bg-white shadow-sm fixed-top">
+        <div class="container-fluid">
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler1"
+                aria-controls="navbarToggler1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú colapsable -->
+            <div class="collapse navbar-collapse" id="navbarToggler1">
+                <a class="navbar-brand" href="PortafolioPro.html">
+                    <img src="assets/Logo.png" alt="Logo-Empresa" height="40">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#AboutMe-section">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#experience-section">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#projects-section">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#reviews-section">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#contact-section">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ---------------- Hero Section ---------------- -->
+    <section class="hero align-items-stretch">
+        <div class="hero-main d-flex flex-column justify-content-between align-items-center">
+            <!-- Imagen Perfil Linkedin ya que no poseo el archivo orginal -->
+            <img class="hero-image-avatar rounded-circle"
+                src="https://media.licdn.com/dms/image/v2/D4E03AQGZ-28xM9Ayjw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1668642251693?e=1738195200&amp;v=beta&amp;t=s26CfHBsVCpsdCRd0fUf6Q4dVUUJWVht3fSUhjT5E8o"
+                loading="lazy" alt="imagen de perfil" id="ember104"
+                class="evi-image lazy-image imgedit-profile-photo-frame-viewer__target-image ember-view">
+            <h1 class="display-5 mb-3">Hola, soy Luis Chaves Mora</h1>
+            <h2 class="lead mb-1">Desarrollo en Front-end y Back-end</h2>
+        </div>
+        <div class="hero-inferior">
+            <img class="hero-inferior-image img-fluid" src="./assets/hero-img.png" alt="Logos: Bootstrap, html5, C#">
+        </div>
+    </section>
+    <!-- ---------------- About Me Section ---------------- -->
+    <section id="AboutMe-section" class="AboutMe dark-section">
+        <div class="div-container">
+            <h2 class="section-tittle">
+                Conoce a tu Desarrollador
+            </h2>
+            <p class="section-text">Profesional con más de 3 años de experiencia en redes y soporte técnico, actualmente
+                expandiendo mis horizontes como estudiante avanzado de Ingeniería Informática, me especializo en
+                desarrollo web utilizando C#, WebForms, y tecnologías front-end como HTML, CSS y Bootstrap. Mi
+                background en infraestructura de redes me brinda una perspectiva única para crear soluciones web
+                robustas y escalables</p>
+        </div>
+    </section>
+    <!-- ---------------- Experience Section ---------------- -->
+    <section id="experience-section" class="experience light-section">
+        <div class="container text-center">
+            <div class="row">
+                <!-- Desarrollo Web -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experience-tittle">Desarrollo Web</p>
+                    <p>Desarrollo de aplicaciones web empresariales utilizando tecnologías Microsoft.
+                        Especializado en WebForms con C# y .NET Framework, implementando interfaces responsivas
+                        y soluciones adaptadas a las necesidades del cliente. </p>
+                    <div class="badges-container">
+                        <span class="badge text-bg-primary">C#</span>
+                        <span class="badge text-bg-info">WebForms</span>
+                        <span class="badge text-bg-success">HTML</span>
+                        <span class="badge text-bg-info">CSS</span>
+                        <span class="badge text-bg-warning">Bootstrap</span>
+                        <span class="badge text-bg-secondary">.NET</span>
+                    </div>
+                </div>
+                <!-- Mantenimiento PCs -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-tools"></i>
+                    <p class="experience-tittle">Soporte Técnico</p>
+                    <p>Más de 3 años de experiencia en soporte técnico empresarial,
+                        especializado en redes y sistemas. Configuración de equipos CISCO,
+                        resolución de incidentes y mantenimiento de infraestructura IT.</p>
+                    <div class="badges-container">
+                        <span class="badge text-bg-primary">Redes</span>
+                        <span class="badge text-bg-success">CISCO</span>
+                        <span class="badge text-bg-info">Soporte</span>
+                        <span class="badge text-bg-warning">IPv4/IPv6</span>
+                        <span class="badge text-bg-secondary">Troubleshooting</span>
+                    </div>
+                </div>
+                <!-- Estudiante -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-person-square"></i>
+                    <p class="experience-tittle">Formación</p>
+                    <p>Estudiante avanzado de Ingeniería Informática, cursando el último módulo
+                        de Programación 4. Certificaciones en CISCO CCNA y Scrum Foundation.
+                        Constante actualización en nuevas tecnologías.</p>
+                    <div class="badges-container">
+                        <span class="badge text-bg-primary">Ing. Informática</span>
+                        <span class="badge text-bg-success">CCNA</span>
+                        <span class="badge text-bg-info">Scrum</span>
+                        <span class="badge text-bg-warning">Linux</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ---------------- Projects Section ---------------- -->
+    <hr class="hr hr-blurry" />
+    <section id="projects-section" class="projects-recent light-section d-flex flex-column">
+        <h2 class="section-tittle dark-text">Mis proyectos recientes</h2>
+        <h3 class="section-description">Una muestra de mis desarrollos en aplicaciones web y sistemas empresariales</h3>
+        <!-- Project Gallery -->
+        <div class="container text-center projects-container">
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project">
+                        <img src="./assets/Project1.gif" alt="Proyecto 1">
+                        <div class="overlay">
+                            <p>Calculadora WEB</p>
+                            <div class="icons-container">
+                                <a href="https://github.com/luis-chm/Proyecto1-Calculadora" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="mailto:luischavesmora@hotmail.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project">
+                        <img src="./assets/Project2.gif" alt="Proyecto 2">
+                        <div class="overlay">
+                            <p>Sistema de Inventario</p>
+                            <div class="icons-container">
+                                <a href="https://github.com/luis-chm/InventorySys.WebForm.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="mailto:luischavesmora@hotmail.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project">
+                        <img src="./assets/Project3.gif" alt="Proyecto 1">
+                        <div class="overlay">
+                            <p>Sistema de Facturación</p>
+                            <div class="icons-container">
+                                <a href="https://github.com/luis-chm/Proyecto2Progra3" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="mailto:luischavesmora@hotmail.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!------------------ Reviews Clients Section ------------------>
+    <hr class="hr hr-blurry" />
+    <section id="reviews-section" class="reviews light-section">
+        <h2 class="section-tittle">Reviews de los clientes</h2>
+        <h3 class="section-description">Opiniones de personas con las que he colaborado...</h3>
+        <!-- ---------------- Carrusel Reviews ---------------- -->
+        <div id="reviews-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Carrusel 1 -->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <img class="review-imagen rounded-circle" src="assets/cliente1.jpg" alt="Foto de Cliente 1">
+                        <p class="review-text">
+                            "Su experiencia en redes combinada con sus habilidades de desarrollo nos permitió
+                            implementar
+                            soluciones más eficientes. La dedicación y compromiso de Luis con cada proyecto es
+                            admirable."
+                        </p>
+                        <div class="review-info">
+                            <p class="client">Oscar Salas Villalobos.</p>
+                            <p class="cargo">Pre-Sales Core Network Engineer.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carrusel 2 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="review-imagen rounded-circle" src="assets/cliente2.jpg" alt="Foto de Cliente 2">
+                        <p class="review-text">
+                            "Luis demostró gran profesionalismo y conocimiento técnico durante el desarrollo de nuestro
+                            sistema de gestión.
+                            Su capacidad para entender nuestras necesidades y proponer soluciones efectivas fue clave
+                            para el éxito del proyecto."
+                        </p>
+                        <div class="review-info">
+                            <p class="cliente">Kenia Hernandez Arana.</p>
+                            <p class="cargo">Gerente de Logística · Mirage Granito Ceramico SA.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carrusel 3 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="review-imagen rounded-circle" src="assets/cliente3.jpg" alt="Foto de Cliente 3">                      
+                        <p class="review-text">
+                            "Como estudiante, Luis ha demostrado una excelente capacidad para aplicar conceptos teóricos
+                            en proyectos prácticos. Su habilidad para combinar sus conocimientos en programación con su
+                            experiencia laboral lo hace destacar en el desarrollo de soluciones empresariales."
+                        </p>
+                        <div class="review-info">
+                            <p class="cliente">Alex Benjamin Curling.</p>
+                            <p class="cargo">Profesor de Ingeniería Informatica UPI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#reviews-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#reviews-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+    <!-- ---------------- Section Contact ---------------- -->
+    <section id="contact-section" class="contact dark-section">
+        <div class="container">
+            <div class="container text-center rectangle d-flex justify-content-evenly">
+                <div class="row">
+                    <div class="col-12 col-md-4 section-tittle">
+                        ¡Hablemos!
+                    </div>
+                    <div class="col-12 col-md-4 description">
+                        Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="mailto:luischavesmora@gmail.com">
+                            <button type="button">
+                                Contacto
+                                <i class="bi bi-envelope-check-fill"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------- Section Footer ---------------- -->
+    <footer class="dark-section text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 Luis Chaves Mora. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="social-links">
+                        <a href="https://github.com/luis-chm" class="text-white me-3" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/luis-chaves-mora-25670219b?" class="text-white me-3"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-linkedin"></i></a>
+                        <a href="mailto:luischavesmora@hotmail.com" class="text-white"><i
+                                class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ---------------- Section Scripts ---------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
